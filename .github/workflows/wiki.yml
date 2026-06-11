@@ -1,0 +1,40 @@
+# Example workflow that consumes the Copilot SDK Wiki action.
+#
+# Copy this file into a consuming repository at .github/workflows/wiki.yml and
+# replace `your-org/ghcp_sdk_wiki@v1` with the location and ref where you publish
+# this action.
+name: Wiki
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: wiki-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  wiki:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate and publish wiki
+        uses: your-org/ghcp_sdk_wiki@v1
+        with:
+          copilot-token: ${{ secrets.COPILOT_TOKEN }}
+          # model: gpt-5.5
+          # wiki-dir: wiki
+          # deploy: "true"
+          # commit-wiki-sources: "true"
+          custom-prompt: |
+            Focus on how to install and use the project.
+            Add an architecture page with a Mermaid diagram and document the
+            main configuration options in a dedicated page.
