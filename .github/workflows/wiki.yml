@@ -27,7 +27,7 @@ jobs:
           fetch-depth: 0
 
       - name: Generate and publish wiki
-        uses: your-org/ghcp_sdk_wiki@v1
+        uses: jeffrey-groneberg/ghcp_sdk_wiki@v1
         with:
           copilot-token: ${{ secrets.COPILOT_TOKEN }}
           # model: gpt-5.5
