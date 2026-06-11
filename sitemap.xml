@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://jeffrey-groneberg.github.io/dota2stats/</loc>
+         <lastmod>2026-06-11</lastmod>
+    </url>
+    <url>
+         <loc>https://jeffrey-groneberg.github.io/dota2stats/api-reference/</loc>
+         <lastmod>2026-06-11</lastmod>
+    </url>
+    <url>
+         <loc>https://jeffrey-groneberg.github.io/dota2stats/architecture/</loc>
+         <lastmod>2026-06-11</lastmod>
+    </url>
+    <url>
+         <loc>https://jeffrey-groneberg.github.io/dota2stats/configuration/</loc>
+         <lastmod>2026-06-11</lastmod>
+    </url>
+    <url>
+         <loc>https://jeffrey-groneberg.github.io/dota2stats/contributing/</loc>
+         <lastmod>2026-06-11</lastmod>
+    </url>
+    <url>
+         <loc>https://jeffrey-groneberg.github.io/dota2stats/getting-started/</loc>
+         <lastmod>2026-06-11</lastmod>
+    </url>
+    <url>
+         <loc>https://jeffrey-groneberg.github.io/dota2stats/usage-cli/</loc>
+         <lastmod>2026-06-11</lastmod>
+    </url>
+    <url>
+         <loc>https://jeffrey-groneberg.github.io/dota2stats/usage-java-api/</loc>
+         <lastmod>2026-06-11</lastmod>
+    </url>
+</urlset>
